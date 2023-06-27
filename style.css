@@ -1,0 +1,85 @@
+body{
+    background-color: darksalmon;
+
+}
+
+h1{
+    text-align: center;
+    margin-top: 200px;
+}
+@keyframes ring-animation {
+    0%{
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50%{
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(0.5);
+        opacity: 0;
+    }
+}
+
+.heading{
+    animation: ring-animation 2s infinite;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 500px;
+    margin-right: 500px;
+    padding: 10px;
+}
+form>input{
+    margin: 10px;
+    font-size: 1rem;
+}
+
+button{
+    margin: 10px;
+    border: 1px solid burlywood;
+    border-radius: 50px;
+    padding: 5px;
+    background-color: darkslateblue;
+}
+button:hover{
+    background-color: rgb(50, 4, 106);
+    color: white;
+    cursor: pointer;
+
+}
+
+body>div2{
+    margin-left: 42%;
+    color: black;
+    font-size: 3rem;
+    background-color: rgb(8, 241, 217);
+    width: 200px;
+    display: flex;
+    height: 200px;
+    border: 2px solid rgb(8, 241, 217);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    animation: rotate-animation 5s infinite;
+    border-radius: 100%;
+    
+}
+@keyframes rotate-animation{
+    0%{
+        transform: rotate(0deg);
+        opacity: 0;
+        
+    }
+    100%{
+        transform: rotate(360deg);
+        opacity: 100;
+        
+        
+    }
+
+}
